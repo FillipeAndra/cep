@@ -1,15 +1,27 @@
 package CLASSES;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Cep {
+    @SerializedName("cep")
     private String cep;
+    @SerializedName("logradouro")
     private String logradouro;
+    @SerializedName("complemento")
     private String complemento;
+    @SerializedName("bairro")
     private String bairro;
+    @SerializedName("localidade")
     private String localidade;
+    @SerializedName("uf")
     private String uf;
+    @SerializedName("ibge")
     private String ibge;
+    @SerializedName("gia")
     private String gia;
+    @SerializedName("ddd")
     private String ddd;
+    @SerializedName("siafi")
     private String siafi;
 
     public Cep(String cep, String logradouro, String complemento,
@@ -28,22 +40,7 @@ public class Cep {
         this.siafi = siafi;
     }
 
-    public Cep(CepAPI cepAPI){
-        try{
-            this.cep = cepAPI.cep();
-            this.logradouro = cepAPI.logradouro();
-            this.complemento = cepAPI.complemento();
-            this.bairro = cepAPI.bairro();
-            this.localidade = cepAPI.localidade();
-            this.uf = cepAPI.uf();
-            this.ibge = cepAPI.ibge();
-            this.gia = cepAPI.gia();
-            this.ddd = cepAPI.ddd();
-            this.siafi = cepAPI.siafi();
-        }catch(NullPointerException e){
-            System.out.println("algo está vazio");
-        }
-    }
+    
 
     public String getCep() {
         return cep;
