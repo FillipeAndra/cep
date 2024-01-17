@@ -1,7 +1,6 @@
 package PRINCIPAL;
 
 import CLASSES.Cep;
-import CLASSES.CepAPI;
 import java.util.Scanner;
 
 import com.google.gson.FieldNamingPolicy;
@@ -55,9 +54,8 @@ public class Principal {
                     String json = response.body();
                     System.out.println(json);
 
-                    CepAPI cepAPI = gson.fromJson(json, CepAPI.class);
-
-                    Cep cep = new Cep(cepAPI);
+                    Cep cep = gson.fromJson(json, Cep.class);
+                    System.out.println(cep);
 
                     listaDCeps.add(cep);
 

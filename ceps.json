@@ -1,0 +1,38 @@
+[
+  {
+    "cep": "48680-000",
+    "logradouro": "",
+    "complemento": "",
+    "bairro": "",
+    "localidade": "Abaré",
+    "uf": "BA",
+    "ibge": "2900207",
+    "gia": "",
+    "ddd": "75",
+    "siafi": "3303"
+  },
+  {
+    "cep": "01001-000",
+    "logradouro": "Praça da Sé",
+    "complemento": "lado ímpar",
+    "bairro": "Sé",
+    "localidade": "São Paulo",
+    "uf": "SP",
+    "ibge": "3550308",
+    "gia": "1004",
+    "ddd": "11",
+    "siafi": "7107"
+  },
+  {
+    "cep": "40391-160",
+    "logradouro": "Estrada de Campinas",
+    "complemento": "lado ímpar",
+    "bairro": "São Caetano",
+    "localidade": "Salvador",
+    "uf": "BA",
+    "ibge": "2927408",
+    "gia": "",
+    "ddd": "71",
+    "siafi": "3849"
+  }
+]
